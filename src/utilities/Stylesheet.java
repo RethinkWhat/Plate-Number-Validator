@@ -93,7 +93,7 @@ public class Stylesheet {
      */
     public JLabel createLblPlate(String text, Color color) {
         JLabel label = new JLabel(text);
-        label.setFont(getPlateFont());
+        label.setFont(new Font(getPlateFont().getName(), Font.BOLD, 36));
         label.setForeground(color);
         return label;
     }
@@ -414,10 +414,10 @@ public class Stylesheet {
                 //Draws the rounded panel with borders.
                 graphics.setColor(pnlColor);
                 graphics.fillRoundRect(0, 0, getWidth() - 1, getHeight() - 1, arcs.width, arcs.height);
-                graphics.setColor(bgColor);
             }
         };
 
+        panel.setBackground(bgColor);
         panel.setPreferredSize(new Dimension(width, height));
         return panel;
     }
