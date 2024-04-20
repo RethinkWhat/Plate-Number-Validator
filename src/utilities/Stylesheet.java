@@ -77,7 +77,7 @@ public class Stylesheet {
         try {
             // Load the font file
             File fontFile = new File("res/fonts/FE-FONT.TTF");
-            plateFont = Font.createFont(Font.TRUETYPE_FONT, fontFile).deriveFont(Font.BOLD, 24);
+            plateFont = Font.createFont(Font.TRUETYPE_FONT, fontFile).deriveFont(Font.BOLD, 28);
         } catch (IOException | FontFormatException e) {
             e.printStackTrace();
             plateFont = new Font("Arial", Font.PLAIN, 24);
@@ -274,7 +274,7 @@ public class Stylesheet {
         JButton button = new JButton(text);
         button.setBackground(background);
         button.setForeground(foreground);
-        button.setFont(new Font("Arial", Font.PLAIN, 15));
+        button.setFont(new Font("Arial", Font.BOLD, 20));
         button.setBorder(new RoundedBorder(radius));
         button.setVerticalTextPosition(SwingConstants.CENTER);
         button.setHorizontalAlignment(SwingConstants.CENTER);
