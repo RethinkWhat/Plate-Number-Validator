@@ -1,4 +1,4 @@
-package platevalidator.frontend;
+package platevalidator;
 
 import utilities.Stylesheet;
 
@@ -7,7 +7,6 @@ import javax.swing.border.EmptyBorder;
 import javax.swing.border.LineBorder;
 import java.awt.*;
 import java.awt.event.*;
-import platevalidator.PlateValidator;
 
 public class PlateValidatorView extends JFrame {
 
@@ -99,15 +98,8 @@ public class PlateValidatorView extends JFrame {
                     }
                     // Trigger validation when Enter key is pressed
                     if (e.getKeyCode() == KeyEvent.VK_ENTER) {
-                        btnValidate.doClick(); // Simulate button click
+                        btnValidate.doClick();
                     }
-                }
-            });
-
-            txtPlateNumber.addFocusListener(new FocusAdapter() {
-                @Override
-                public void focusGained(FocusEvent e) {
-                    lblInvalid.setText(""); // Clear invalid message when text field gains focus
                 }
             });
 
@@ -135,16 +127,15 @@ public class PlateValidatorView extends JFrame {
                             String type = PlateValidator.getType(plateNumber);
                             ValidPanel validPanel = (ValidPanel) pnlCards.getComponent(1);
                             validPanel.updatePlateInfo(plateNumber, region, type);
-                            lblInvalid.setText(""); // Clear any previous error messages
+                            lblInvalid.setText("");
                             CardLayout cardLayout = (CardLayout) pnlCards.getLayout();
                             cardLayout.show(pnlCards, "valid");
                         } else {
                             lblInvalid.setText("<html><div style='text-align: center;'>The entered plate number is INVALID. Please try again.</div></html>");
                         }
                     } catch (Exception ex) {
-                        // Handle the exception gracefully
                         lblInvalid.setText("<html><div style='text-align: center;'>An error occurred while validating the plate number. Please try again.</div></html>");
-                        ex.printStackTrace(); // Print the exception trace for debugging
+                        ex.printStackTrace();
                     }
                 }
             });
@@ -234,6 +225,9 @@ public class PlateValidatorView extends JFrame {
                 @Override
                 public void actionPerformed(ActionEvent e) {
                     cardLayout.show(pnlCards, "validator");
+                    ValidatorPanel validatorPanel = (ValidatorPanel) pnlCards.getComponent(0);
+                    validatorPanel.txtPlateNumber.setText("Enter Plate Number");
+                    validatorPanel.txtPlateNumber.setForeground(style.gray);
                 }
             });
 
@@ -252,9 +246,4 @@ public class PlateValidatorView extends JFrame {
         }
     }
 
-    public static void main(String[] args) {
-        SwingUtilities.invokeLater(() -> {
-            PlateValidatorView view = new PlateValidatorView();
-        });
-    }
 }

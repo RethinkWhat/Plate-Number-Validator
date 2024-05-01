@@ -1,0 +1,502 @@
+[
+  {
+    "plate_number": "NNN1234",
+    "vehicle_type": "Four Wheel Vehicle",
+    "region": "National Capital Region (NCR)"
+  },
+  {
+    "plate_number": "TTT1234",
+    "vehicle_type": "Four Wheel Vehicle",
+    "region": "National Capital Region (NCR)"
+  },
+  {
+    "plate_number": "UUU1234",
+    "vehicle_type": "Four Wheel Vehicle",
+    "region": "National Capital Region (NCR)"
+  },
+  {
+    "plate_number": "XXX1234",
+    "vehicle_type": "Four Wheel Vehicle",
+    "region": "National Capital Region (NCR)"
+  },
+  {
+    "plate_number": "QQQ1234",
+    "vehicle_type": "Four Wheel Vehicle",
+    "region": "National Capital Region (NCR)"
+  },
+  {
+    "plate_number": "PPP1234",
+    "vehicle_type": "Four Wheel Vehicle",
+    "region": "National Capital Region (NCR)"
+  },
+  {
+    "plate_number": "AAA1234",
+    "vehicle_type": "Four Wheel Vehicle",
+    "region": "Region 1"
+  },
+  {
+    "plate_number": "III1234",
+    "vehicle_type": "Four Wheel Vehicle",
+    "region": "Region 1"
+  },
+  {
+    "plate_number": "BBB1234",
+    "vehicle_type": "Four Wheel Vehicle",
+    "region": "Region 2"
+  },
+  {
+    "plate_number": "CCC1234",
+    "vehicle_type": "Four Wheel Vehicle",
+    "region": "Region 3"
+  },
+  {
+    "plate_number": "RRR1234",
+    "vehicle_type": "Four Wheel Vehicle",
+    "region": "Region 3"
+  },
+  {
+    "plate_number": "WWW1234",
+    "vehicle_type": "Four Wheel Vehicle",
+    "region": "Region 3"
+  },
+  {
+    "plate_number": "DDD1234",
+    "vehicle_type": "Four Wheel Vehicle",
+    "region": "Region 4A"
+  },
+  {
+    "plate_number": "OOO1234",
+    "vehicle_type": "Four Wheel Vehicle",
+    "region": "Region 4A"
+  },
+  {
+    "plate_number": "VVV1234",
+    "vehicle_type": "Four Wheel Vehicle",
+    "region": "Region 4B"
+  },
+  {
+    "plate_number": "EEE1234",
+    "vehicle_type": "Four Wheel Vehicle",
+    "region": "Region 5"
+  },
+  {
+    "plate_number": "FFF1234",
+    "vehicle_type": "Four Wheel Vehicle",
+    "region": "Region 6"
+  },
+  {
+    "plate_number": "GGG1234",
+    "vehicle_type": "Four Wheel Vehicle",
+    "region": "Region 7"
+  },
+  {
+    "plate_number": "HHH1234",
+    "vehicle_type": "Four Wheel Vehicle",
+    "region": "Region 8"
+  },
+  {
+    "plate_number": "JJJ1234",
+    "vehicle_type": "Four Wheel Vehicle",
+    "region": "Region 9"
+  },
+  {
+    "plate_number": "KKK1234",
+    "vehicle_type": "Four Wheel Vehicle",
+    "region": "Region 10"
+  },
+  {
+    "plate_number": "LLL1234",
+    "vehicle_type": "Four Wheel Vehicle",
+    "region": "Region 11"
+  },
+  {
+    "plate_number": "MMM1234",
+    "vehicle_type": "Four Wheel Vehicle",
+    "region": "Region 12"
+  },
+  {
+    "plate_number": "ZZZ1234",
+    "vehicle_type": "Four Wheel Vehicle",
+    "region": "CARAGA"
+  },
+  {
+    "plate_number": "YYY1234",
+    "vehicle_type": "Four Wheel Vehicle",
+    "region": "CAR"
+  },
+  {
+    "plate_number": "SSS1234",
+    "vehicle_type": "Four Wheel Vehicle",
+    "region": "Government Vehicle"
+  },
+  {
+    "plate_number": "SAD5678",
+    "vehicle_type": "Four Wheel Vehicle",
+    "region": "Government Vehicle"
+  },
+  {
+    "plate_number": "SIX3589",
+    "vehicle_type": "Four Wheel Vehicle",
+    "region": "Government Vehicle"
+  },
+  {
+    "plate_number": "NIT1234",
+    "vehicle_type": "Four Wheel Vehicle",
+    "region": "Region 1"
+  },
+  {
+    "plate_number": "IAB1234",
+    "vehicle_type": "Four Wheel Vehicle",
+    "region": "Region 1"
+  },
+  {
+    "plate_number": "SYY1234",
+    "vehicle_type": "Four Wheel Vehicle",
+    "region": "Government Vehicle"
+  },
+  {
+    "plate_number": "PPO1234",
+    "vehicle_type": "Four Wheel Vehicle",
+    "region": "National Capital Region (NCR)"
+  },
+  {
+    "plate_number": "NNO1234",
+    "vehicle_type": "Four Wheel Vehicle",
+    "region": "National Capital Region (NCR)"
+  },
+  {
+    "plate_number": "PSR1234",
+    "vehicle_type": "Four Wheel Vehicle",
+    "region": "National Capital Region (NCR)"
+  },
+  {
+    "plate_number": "UII1234",
+    "vehicle_type": "Four Wheel Vehicle",
+    "region": "National Capital Region (NCR)"
+  },
+  {
+    "plate_number": "QWQ1234",
+    "vehicle_type": "Four Wheel Vehicle",
+    "region": "National Capital Region (NCR)"
+  },
+  {
+    "plate_number": "VFF1234",
+    "vehicle_type": "Four Wheel Vehicle",
+    "region": "Region 4B"
+  },
+  {
+    "plate_number": "EQQ1234",
+    "vehicle_type": "Four Wheel Vehicle",
+    "region": "Region 5"
+  },
+  {
+    "plate_number": "GRE1234",
+    "vehicle_type": "Four Wheel Vehicle",
+    "region": "Region 7"
+  },
+  {
+    "plate_number": "GQQ1234",
+    "vehicle_type": "Four Wheel Vehicle",
+    "region": "Region 7"
+  },
+  {
+    "plate_number": "HRI1234",
+    "vehicle_type": "Four Wheel Vehicle",
+    "region": "Region 8"
+  },
+  {
+    "plate_number": "HDS1234",
+    "vehicle_type": "Four Wheel Vehicle",
+    "region": "Region 8"
+  },
+  {
+    "plate_number": "JJI1234",
+    "vehicle_type": "Four Wheel Vehicle",
+    "region": "Region 9"
+  },
+  {
+    "plate_number": "JHA1234",
+    "vehicle_type": "Four Wheel Vehicle",
+    "region": "Region 9"
+  },
+  {
+    "plate_number": "KJY1234",
+    "vehicle_type": "Four Wheel Vehicle",
+    "region": "Region 10"
+  },
+  {
+    "plate_number": "LYU1234",
+    "vehicle_type": "Four Wheel Vehicle",
+    "region": "Region 11"
+  },
+  {
+    "plate_number": "MKI1234",
+    "vehicle_type": "Four Wheel Vehicle",
+    "region": "Region 12"
+  },
+  {
+    "plate_number": "ZOI1234",
+    "vehicle_type": "Four Wheel Vehicle",
+    "region": "CARAGA"
+  },
+  {
+    "plate_number": "YCA1234",
+    "vehicle_type": "Four Wheel Vehicle",
+    "region": "CAR"
+  },
+  {
+    "plate_number": "YIA1234",
+    "vehicle_type": "Four Wheel Vehicle",
+    "region": "CAR"
+  },
+  {
+    "plate_number": "N123RE",
+    "vehicle_type": "Motor Vehicle",
+    "region": "National Capital Region (NCR)"
+  },
+  {
+    "plate_number": "P123WE",
+    "vehicle_type": "Motor Vehicle",
+    "region": "National Capital Region (NCR)"
+  },
+  {
+    "plate_number": "Q123YT",
+    "vehicle_type": "Motor Vehicle",
+    "region": "National Capital Region (NCR)"
+  },
+  {
+    "plate_number": "T123IU",
+    "vehicle_type": "Motor Vehicle",
+    "region": "National Capital Region (NCR)"
+  },
+  {
+    "plate_number": "U123PO",
+    "vehicle_type": "Motor Vehicle",
+    "region": "National Capital Region (NCR)"
+  },
+  {
+    "plate_number": "X123HG",
+    "vehicle_type": "Motor Vehicle",
+    "region": "National Capital Region (NCR)"
+  },
+  {
+    "plate_number": "A123BC",
+    "vehicle_type": "Motor Vehicle",
+    "region": "Region 1"
+  },
+  {
+    "plate_number": "I456CD",
+    "vehicle_type": "Motor Vehicle",
+    "region": "Region 1"
+  },
+  {
+    "plate_number": "B789EF",
+    "vehicle_type": "Motor Vehicle",
+    "region": "Region 2"
+  },
+  {
+    "plate_number": "C012GH",
+    "vehicle_type": "Motor Vehicle",
+    "region": "Region 3"
+  },
+  {
+    "plate_number": "R345IJ",
+    "vehicle_type": "Motor Vehicle",
+    "region": "Region 3"
+  },
+  {
+    "plate_number": "W678KL",
+    "vehicle_type": "Motor Vehicle",
+    "region": "Region 3"
+  },
+  {
+    "plate_number": "O901MN",
+    "vehicle_type": "Motor Vehicle",
+    "region": "Region 4A"
+  },
+  {
+    "plate_number": "D901MN",
+    "vehicle_type": "Motor Vehicle",
+    "region": "Region 4A"
+  },
+  {
+    "plate_number": "V234OP",
+    "vehicle_type": "Motor Vehicle",
+    "region": "Region 4B"
+  },
+  {
+    "plate_number": "E567QR",
+    "vehicle_type": "Motor Vehicle",
+    "region": "Region 5"
+  },
+  {
+    "plate_number": "F890ST",
+    "vehicle_type": "Motor Vehicle",
+    "region": "Region 6"
+  },
+  {
+    "plate_number": "G123UV",
+    "vehicle_type": "Motor Vehicle",
+    "region": "Region 7"
+  },
+  {
+    "plate_number": "H456WX",
+    "vehicle_type": "Motor Vehicle",
+    "region": "Region 8"
+  },
+  {
+    "plate_number": "J789YZ",
+    "vehicle_type": "Motor Vehicle",
+    "region": "Region 9"
+  },
+  {
+    "plate_number": "K012AB",
+    "vehicle_type": "Motor Vehicle",
+    "region": "Region 10"
+  },
+  {
+    "plate_number": "L345CD",
+    "vehicle_type": "Motor Vehicle",
+    "region": "Region 11"
+  },
+  {
+    "plate_number": "M678EF",
+    "vehicle_type": "Motor Vehicle",
+    "region": "Region 12"
+  },
+  {
+    "plate_number": "Y901GH",
+    "vehicle_type": "Motor Vehicle",
+    "region": "CAR"
+  },
+  {
+    "plate_number": "Z234IJ",
+    "vehicle_type": "Motor Vehicle",
+    "region": "CARAGA"
+  },
+  {
+    "plate_number": "123NPC",
+    "vehicle_type": "Motor Vehicle",
+    "region": "National Capital Region (NCR)"
+  },
+  {
+    "plate_number": "345PEE",
+    "vehicle_type": "Motor Vehicle",
+    "region": "National Capital Region (NCR)"
+  },
+  {
+    "plate_number": "678QNG",
+    "vehicle_type": "Motor Vehicle",
+    "region": "National Capital Region (NCR)"
+  },
+  {
+    "plate_number": "910TUR",
+    "vehicle_type": "Motor Vehicle",
+    "region": "National Capital Region (NCR)"
+  },
+  {
+    "plate_number": "112UNC",
+    "vehicle_type": "Motor Vehicle",
+    "region": "National Capital Region (NCR)"
+  },
+  {
+    "plate_number": "131XYS",
+    "vehicle_type": "Motor Vehicle",
+    "region": "National Capital Region (NCR)"
+  },
+  {
+    "plate_number": "415ABC",
+    "vehicle_type": "Motor Vehicle",
+    "region": "Region 1"
+  },
+  {
+    "plate_number": "161IJK",
+    "vehicle_type": "Motor Vehicle",
+    "region": "Region 1"
+  },
+  {
+    "plate_number": "715BOB",
+    "vehicle_type": "Motor Vehicle",
+    "region": "Region 2"
+  },
+  {
+    "plate_number": "192CRS",
+    "vehicle_type": "Motor Vehicle",
+    "region": "Region 3"
+  },
+  {
+    "plate_number": "021RIT",
+    "vehicle_type": "Motor Vehicle",
+    "region": "Region 3"
+  },
+  {
+    "plate_number": "222WUT",
+    "vehicle_type": "Motor Vehicle",
+    "region": "Region 3"
+  },
+  {
+    "plate_number": "324DUD",
+    "vehicle_type": "Motor Vehicle",
+    "region": "Region 4A"
+  },
+  {
+    "plate_number": "252OLB",
+    "vehicle_type": "Motor Vehicle",
+    "region": "Region 4A"
+  },
+  {
+    "plate_number": "627VEE",
+    "vehicle_type": "Motor Vehicle",
+    "region": "Region 4B"
+  },
+  {
+    "plate_number": "282ENG",
+    "vehicle_type": "Motor Vehicle",
+    "region": "Region 5"
+  },
+  {
+    "plate_number": "930FUP",
+    "vehicle_type": "Motor Vehicle",
+    "region": "Region 6"
+  },
+  {
+    "plate_number": "313GIT",
+    "vehicle_type": "Motor Vehicle",
+    "region": "Region 7"
+  },
+  {
+    "plate_number": "233HER",
+    "vehicle_type": "Motor Vehicle",
+    "region": "Region 8"
+  },
+  {
+    "plate_number": "343JAK",
+    "vehicle_type": "Motor Vehicle",
+    "region": "Region 9"
+  },
+  {
+    "plate_number": "536KRT",
+    "vehicle_type": "Motor Vehicle",
+    "region": "Region 10"
+  },
+  {
+    "plate_number": "373LOM",
+    "vehicle_type": "Motor Vehicle",
+    "region": "Region 11"
+  },
+  {
+    "plate_number": "839MAN",
+    "vehicle_type": "Motor Vehicle",
+    "region": "Region 12"
+  },
+  {
+    "plate_number": "404YIT",
+    "vehicle_type": "Motor Vehicle",
+    "region": "CAR"
+  },
+  {
+    "plate_number": "142ZIT",
+    "vehicle_type": "Motor Vehicle",
+    "region": "CARAGA"
+  }
+]
