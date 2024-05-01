@@ -7,12 +7,14 @@ import javax.swing.border.EmptyBorder;
 import javax.swing.border.LineBorder;
 import java.awt.*;
 import java.awt.event.*;
+import platevalidator.PlateValidator;
 
 public class PlateValidatorView extends JFrame {
 
     private CardLayout cardLayout;
     private JPanel pnlCards;
     private Stylesheet style = new Stylesheet();
+    private JLabel lblInvalid;
 
     public PlateValidatorView() {
         super("Plate Number Validator");
@@ -44,7 +46,6 @@ public class PlateValidatorView extends JFrame {
         private JButton btnValidate;
         private JLabel lblTitle1;
         private JLabel lblTitle2;
-        private JLabel lblInvalid;
 
         public ValidatorPanel() {
             setBackground(style.pickledBluewood);
@@ -96,12 +97,26 @@ public class PlateValidatorView extends JFrame {
                     if (txtPlateNumber.getText().equals("Enter Plate Number") && e.getKeyCode() == KeyEvent.VK_BACK_SPACE) {
                         e.consume();
                     }
+                    // Trigger validation when Enter key is pressed
+                    if (e.getKeyCode() == KeyEvent.VK_ENTER) {
+                        btnValidate.doClick(); // Simulate button click
+                    }
                 }
             });
 
-            lblInvalid = style.createLblP("", style.red);
+            txtPlateNumber.addFocusListener(new FocusAdapter() {
+                @Override
+                public void focusGained(FocusEvent e) {
+                    lblInvalid.setText(""); // Clear invalid message when text field gains focus
+                }
+            });
+
+            lblInvalid = style.createLblH3("", style.red);
+            lblInvalid.setPreferredSize(new Dimension(370, 10));
+            gbc.anchor = GridBagConstraints.CENTER;
             gbc.gridy = 4;
             gbc.gridwidth = 2;
+            gbc.gridx = 0;
             add(lblInvalid, gbc);
 
             btnValidate = style.createBtnRounded("VALIDATE", style.celadon, style.white, 10);
@@ -114,12 +129,26 @@ public class PlateValidatorView extends JFrame {
                 @Override
                 public void actionPerformed(ActionEvent e) {
                     String plateNumber = txtPlateNumber.getText();
-                    ValidPanel validPanel = (ValidPanel) pnlCards.getComponent(1);
-                    validPanel.updatePlateNumber(plateNumber);
-                    CardLayout cardLayout = (CardLayout) pnlCards.getLayout();
-                    cardLayout.show(pnlCards, "valid");
+                    try {
+                        if (PlateValidator.validate(plateNumber)) {
+                            String region = PlateValidator.getRegion(plateNumber);
+                            String type = PlateValidator.getType(plateNumber);
+                            ValidPanel validPanel = (ValidPanel) pnlCards.getComponent(1);
+                            validPanel.updatePlateInfo(plateNumber, region, type);
+                            lblInvalid.setText(""); // Clear any previous error messages
+                            CardLayout cardLayout = (CardLayout) pnlCards.getLayout();
+                            cardLayout.show(pnlCards, "valid");
+                        } else {
+                            lblInvalid.setText("<html><div style='text-align: center;'>The entered plate number is INVALID. Please try again.</div></html>");
+                        }
+                    } catch (Exception ex) {
+                        // Handle the exception gracefully
+                        lblInvalid.setText("<html><div style='text-align: center;'>An error occurred while validating the plate number. Please try again.</div></html>");
+                        ex.printStackTrace(); // Print the exception trace for debugging
+                    }
                 }
             });
+
         }
     }
 
@@ -130,6 +159,8 @@ public class PlateValidatorView extends JFrame {
         private JPanel pnlDetails;
         private JPanel pnlButton;
         private JLabel lblPlateNumberInput;
+        private JLabel lblVehicleTypeDesc;
+        private JLabel lblRegionDesc;
 
         public ValidPanel() {
 
@@ -178,36 +209,18 @@ public class PlateValidatorView extends JFrame {
             JLabel lblVehicleType = style.createLblH2("Vehicle Type:", style.black);
             container.add(lblVehicleType, gbc);
             gbc.gridx = 1;
-            JLabel lblVehicleTypeDesc = style.createLblP("Four Wheeled Vehicle", style.black);
+            lblVehicleTypeDesc = style.createLblP("", style.black);
             container.add(lblVehicleTypeDesc, gbc);
 
-            // Classification
+            // Region
             gbc.gridy = 3;
             gbc.gridx = 0;
-            JLabel lblClassification = style.createLblH2("Classification:", style.black);
-            container.add(lblClassification, gbc);
-            gbc.gridx = 1;
-            JLabel lblClassificationDesc = style.createLblP("Hybrid Vehicle", style.black);
-            container.add(lblClassificationDesc, gbc);
-
-            // Region
-            gbc.gridy = 4;
-            gbc.gridx = 0;
+            gbc.anchor = GridBagConstraints.WEST;
             JLabel lblRegion = style.createLblH2("Region:", style.black);
             container.add(lblRegion, gbc);
             gbc.gridx = 1;
-            JLabel lblRegionDesc = style.createLblP("National Capital Region (NCR)", style.black);
+            lblRegionDesc = style.createLblP("", style.black);
             container.add(lblRegionDesc, gbc);
-
-            // Registration Date
-            gbc.gridy = 5;
-            gbc.gridx = 0;
-            JLabel lblRegistrationDate = style.createLblH2("Registration Date:", style.black);
-            container.add(lblRegistrationDate, gbc);
-            gbc.gridx = 1;
-            JLabel lblRegistrationDateDesc = style.createLblP("April, 8th to 14th", style.black);
-            container.add(lblRegistrationDateDesc, gbc);
-
 
             pnlDetails.add(container);
 
@@ -230,8 +243,12 @@ public class PlateValidatorView extends JFrame {
 
         }
 
-        public void updatePlateNumber(String plateNumber) {
+        public void updatePlateInfo(String plateNumber, String region, String type) {
             lblPlateNumberInput.setText(plateNumber);
+            lblInvalid.setText("");
+
+            lblVehicleTypeDesc.setText(type);
+            lblRegionDesc.setText(region);
         }
     }
 
